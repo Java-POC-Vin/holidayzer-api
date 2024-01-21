@@ -1,12 +1,15 @@
-package com.holidayzer.api.controllers;
+package com.holidayzer.api.services;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Holidayzer {
+import org.springframework.stereotype.Service;
+
+@Service
+public class HolidaysService {
     private Map<String, String> holidays = new HashMap<>();
 
-    public Holidayzer() {
+    public HolidaysService() {
         buildHolidays();
     }
 
