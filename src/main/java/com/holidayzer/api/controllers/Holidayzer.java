@@ -30,4 +30,13 @@ public class Holidayzer {
         return this.holidays;
     }
 
+    public String isItHoliday(String date) {
+        String holidayName = holidays.get(date);
+
+        if (holidayName == null) {
+            return ("Dia " + date + " não é feriado 😢");
+        } else {
+            return ("Dia " + date + " é " + holidayName + "! 🎉");
+        }
+    }
 }
